@@ -31,9 +31,12 @@ const char* type_To_Str(int type)
         return "TOKEN_RPAREN";
     
     case 5:
-        return "TOKEN_SEMI";
+        return "TOKEN_COMMA";
     
     case 6:
+        return "TOKEN_SEMI";
+    
+    case 7:
         return "TOKEN_EOF";
     }
 

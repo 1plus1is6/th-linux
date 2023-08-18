@@ -10,9 +10,11 @@ typedef struct TOKEN_STRUCT
         TOKEN_EQUALS,
         TOKEN_LPAREN,
         TOKEN_RPAREN,
+        TOKEN_COMMA,
         TOKEN_SEMI,
         TOKEN_EOF
     } type;
+    
     char* value;
 } Token;
 

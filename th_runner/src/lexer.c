@@ -63,6 +63,9 @@ Token* get_Next_Token(Lexer* lexer)
         case ')':
             return advance_With_Current(lexer, TOKEN_RPAREN);
         
+        case ',':
+            return advance_With_Current(lexer, TOKEN_COMMA);
+        
         case ';':
             return advance_With_Current(lexer, TOKEN_SEMI);
         
