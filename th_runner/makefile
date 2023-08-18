@@ -4,11 +4,14 @@ objects=$(sources:.c=.o)
 flags=-g -Wall
 
 $(exec): $(objects)
-	gcc $(objects) $(flags) -o $(exec)
+	gcc $(objects) $(flags) -o bin/$(exec)
 
 %.o: %.c include/%.h
 	gcc -c $(sources) $(flags) $< -o $@
 
+run:
+	./bin/$(exec)
+
 clean:
 	-rm src/*.o
-	-rm *.out
+	-rm bin/*.out

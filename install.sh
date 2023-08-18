@@ -1,6 +1,6 @@
 cd SourceCode
 make
-sudo cp ./th.out /usr/local/bin/th
+sudo cp ./bin/th.out /usr/local/bin/th
 cd ..
 cd ..
 cp -r th ~
